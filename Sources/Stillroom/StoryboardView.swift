@@ -100,6 +100,7 @@ struct StoryboardView:View {
         }
     }
     private func tile(_ item:StoryboardCard,index:Int)->some View {
+        Button {selected = item.id} label: {
         VStack(alignment:.leading,spacing:7) {
             ZStack(alignment:.topLeading) {
                 if let id = item.takeAssetID ?? item.frameAssetID,let image = store.thumbnails[id] {Image(nsImage:image).resizable().scaledToFill().frame(height:125).clipped()}
@@ -110,10 +111,11 @@ struct StoryboardView:View {
             if !item.indicator.isEmpty {Text(item.indicator).font(.system(size:10,weight:.medium)).foregroundStyle(Ink.mint)}
             Text(item.beat.isEmpty ? "Describe what changes in this shot." : item.beat).font(.system(size:10)).foregroundStyle(Ink.quiet).lineLimit(2).frame(height:27,alignment:.topLeading)
         }.padding(10).background(Ink.base,in:RoundedRectangle(cornerRadius:13)).overlay(RoundedRectangle(cornerRadius:13).stroke(selected == item.id ? Ink.mint : .clear,lineWidth:2)).contentShape(Rectangle())
-        .onTapGesture {selected = item.id}
+        }
+        .buttonStyle(.plain)
         .onDrag {dragged = item.id;return NSItemProvider(object:item.id.uuidString as NSString)}
         .onDrop(of:[UTType.text],isTargeted:nil) {_ in guard !blocked,let dragged,dragged != item.id else {return false};reorder(dragged,before:item.id);self.dragged = nil;return true}
-        .accessibilityElement(children:.combine).accessibilityLabel("Shot \(index+1), \(item.title), \(item.indicator), \(String(format:"%.1f",item.duration)) seconds")
+        .accessibilityLabel("Shot \(index+1), \(item.title), \(item.indicator), \(String(format:"%.1f",item.duration)) seconds")
     }
     private var inspector:some View {
         ScrollView {
