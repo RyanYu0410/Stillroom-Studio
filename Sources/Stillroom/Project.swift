@@ -54,11 +54,7 @@ enum RegenerationDirection {
     static func prompt(change:String)->String {
         // The image carries appearance. Repeating an older prompt can bring back
         // locked-camera and micro-movement instructions that contradict this take.
-        return """
-        One continuous cinematic video, starting from the supplied original image.
-        Action and camera direction: \(change.trimmingCharacters(in:.whitespacesAndNewlines))
-        The reference image establishes the starting subject, appearance, setting and lighting. Keep the subject recognizable and the scene coherent as the requested action unfolds. Preserve the reference’s visual style. Show continuous physical movement and natural transitions throughout the take.
-        """
+        return change.trimmingCharacters(in:.whitespacesAndNewlines)
     }
 }
 

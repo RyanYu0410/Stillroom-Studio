@@ -2,7 +2,7 @@ import XCTest
 @testable import Stillroom
 
 final class ShotCraftTests:XCTestCase {
-    func testDirectionCompilesVisibleActionCameraAndContinuityButKeepsProductionNotesOut() {
+    func testDirectionKeepsActionAndCameraWithoutRepeatingTheStaticImageBrief() {
         var plan = ShotDirection()
         plan.camera = "Slow pullback";plan.light = "Warm practical light"
         plan.continuity = "The laptop stays flat on the table."
@@ -11,7 +11,8 @@ final class ShotCraftTests:XCTestCase {
         let prompt = plan.motionPrompt(action:"She raises her eyes toward the window.")
         XCTAssertTrue(prompt.contains("She raises her eyes toward the window."))
         XCTAssertTrue(prompt.contains("moves smoothly backward from the opening frame"))
-        XCTAssertTrue(prompt.contains("laptop stays flat"))
+        XCTAssertFalse(prompt.contains("laptop stays flat"))
+        XCTAssertTrue(plan.imagePrompt().contains("laptop stays flat"))
         XCTAssertTrue(prompt.contains("warm practical light"))
         XCTAssertFalse(prompt.contains(plan.sound));XCTAssertFalse(prompt.contains(plan.purpose))
         XCTAssertFalse(prompt.contains("locked camera"))

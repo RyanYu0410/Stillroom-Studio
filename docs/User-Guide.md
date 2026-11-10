@@ -195,3 +195,7 @@ Text fields retain normal typing behavior. The editable Swift source is in `Sour
 ### Separate the opening image from the movement
 
 Use **Opening pose · still image** to describe one frozen instant: who is visible, where they stand, and the composition. Keep the sequence of movements in **Visible action**. Frame generation uses the opening pose when supplied; motion generation continues to use the action. This reduces the chance of showing the same moving subject several times in one reference image. Older boards remain compatible.
+
+### Direct physical movement in video prompts
+
+Describe what happens after the opening frame with present-tense actions, a clear sequence and camera behavior. The reference pixels already supply appearance and location. Stillroom keeps static continuity notes in image prompts and avoids adding that image brief to the video prompt. Review every candidate: a successful render can still hold the image or invent a cut. The production check for Seven Days Faster rejected such a take, then verified visible paw, head and body movement with an action-focused prompt.

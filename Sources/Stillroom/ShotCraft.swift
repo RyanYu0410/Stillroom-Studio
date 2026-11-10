@@ -16,11 +16,12 @@ struct ShotDirection:Codable,Equatable {
     func motionPrompt(action:String)->String {
         var lines = [RegenerationDirection.prompt(change:action)]
         let cameraDirections = ["Locked camera":"The camera remains stationary while the subject performs the action.","Slow pullback":"The camera moves smoothly backward from the opening frame, gradually revealing more of the scene with natural depth and parallax.","Slow push in":"The camera moves smoothly closer to the subject throughout the take, with natural depth and parallax.","Gentle lateral move":"The camera tracks gently sideways along one continuous path, with natural foreground and background parallax."]
-        if let direction = cameraDirections[camera] {lines.append("Camera direction for this take: " + direction)}
-        if framing != "Keep reference" {lines.append("Composition: \(framing.lowercased()), maintaining the subject and setting in the reference.")}
+        if let direction = cameraDirections[camera] {lines.append(direction)}
+        if framing != "Keep reference" {lines.append("A continuous \(framing.lowercased()).")}
         if light != "Keep reference" {lines.append("Lighting: \(light.lowercased()), natural colors and soft highlight detail.")}
-        if !continuity.trimmingCharacters(in:.whitespacesAndNewlines).isEmpty {lines.append("Continuity: " + continuity.trimmingCharacters(in:.whitespacesAndNewlines))}
-        return lines.joined(separator:"\n")
+        // The actual reference pixels carry static identity and setting. Repeating
+        // an image brief here can make the video model animate a photograph.
+        return lines.joined(separator:" ")
     }
     func imagePrompt()->String {
         var lines = ["Create a cinematic live-action production still based on the supplied reference image.",referenceDirection.trimmingCharacters(in:.whitespacesAndNewlines),"Keep the same recognizable people, wardrobe and physical setting. Use believable skin texture, considered composition and natural photographic detail."]

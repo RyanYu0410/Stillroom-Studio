@@ -29,8 +29,7 @@ final class RegenerationTests:XCTestCase {
     func testMotionPromptPrioritizesRequestedActionWithoutOldStillnessInstructions() {
         let prompt = RegenerationDirection.prompt(change:"Pull back, and let her look up.")
         XCTAssertTrue(prompt.contains("Pull back, and let her look up."))
-        XCTAssertTrue(prompt.contains("supplied original image"))
-        XCTAssertTrue(prompt.contains("starting subject, appearance, setting"))
+        XCTAssertFalse(prompt.contains("reference image"))
         XCTAssertFalse(prompt.contains("restrained"));XCTAssertFalse(prompt.contains("locked"))
         XCTAssertFalse(prompt.contains("micro-movement"))
     }

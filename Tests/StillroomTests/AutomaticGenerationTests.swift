@@ -96,7 +96,7 @@ final class AutomaticGenerationTests:XCTestCase {
         XCTAssertFalse((motion["prompt"] as? String ?? "").contains("Original woman and room."))
         XCTAssertEqual(take.recipe?.originalPrompt,"Original woman and room.")
         XCTAssertTrue((motion["prompt"] as? String ?? "").contains("A slow pullback."))
-        XCTAssertTrue((motion["prompt"] as? String ?? "").contains("The laptop stays on the table."))
+        XCTAssertFalse((motion["prompt"] as? String ?? "").contains("The laptop stays on the table."))
         XCTAssertTrue(FileManager.default.fileExists(atPath:take.path))
     }
     @MainActor func testEngineFailureShowsUsefulErrorAndKeepsOriginalEdit() async throws {
