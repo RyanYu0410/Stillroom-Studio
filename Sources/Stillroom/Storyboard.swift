@@ -6,6 +6,7 @@ struct StoryboardCard:Identifiable,Codable,Equatable {
     var indicator = ""
     var beat = ""
     var action = ""
+    var openingFrame = ""
     var camera = "From prompt"
     var framing = "Keep reference"
     var narration = ""
@@ -13,7 +14,7 @@ struct StoryboardCard:Identifiable,Codable,Equatable {
     var duration:Double = 6
     var frameAssetID:UUID?
     var takeAssetID:UUID?
-    enum CodingKeys:String,CodingKey {case id,title,indicator,beat,action,camera,framing,narration,sound,duration,frameAssetID,takeAssetID}
+    enum CodingKeys:String,CodingKey {case id,title,indicator,beat,action,openingFrame,camera,framing,narration,sound,duration,frameAssetID,takeAssetID}
     init() {}
     init(from decoder:Decoder) throws {
         let c = try decoder.container(keyedBy:CodingKeys.self)
@@ -22,6 +23,7 @@ struct StoryboardCard:Identifiable,Codable,Equatable {
         indicator = try c.decodeIfPresent(String.self,forKey:.indicator) ?? ""
         beat = try c.decodeIfPresent(String.self,forKey:.beat) ?? ""
         action = try c.decodeIfPresent(String.self,forKey:.action) ?? ""
+        openingFrame = try c.decodeIfPresent(String.self,forKey:.openingFrame) ?? ""
         camera = try c.decodeIfPresent(String.self,forKey:.camera) ?? "From prompt"
         framing = try c.decodeIfPresent(String.self,forKey:.framing) ?? "Keep reference"
         narration = try c.decodeIfPresent(String.self,forKey:.narration) ?? ""
@@ -44,7 +46,7 @@ struct Storyboard:Identifiable,Codable,Equatable {
     func validated() throws {
         guard !title.trimmingCharacters(in:.whitespacesAndNewlines).isEmpty,title.count <= 200,premise.count <= 6000,look.count <= 3000,continuity.count <= 3000,cards.count <= 32,Set(cards.map(\.id)).count == cards.count else {throw StudioError.message("The storyboard needs a title, unique cards and at most 32 shots.")}
         for card in cards {
-            guard card.duration.isFinite,(1...60).contains(card.duration),card.title.count <= 200,card.indicator.count <= 100,card.beat.count <= 2000,card.action.count <= 3000,card.narration.count <= 2000,card.sound.count <= 1000,ShotDirection.cameras.contains(card.camera),ShotDirection.framings.contains(card.framing) else {throw StudioError.message("Check the storyboard card’s duration, text and camera choices.")}
+            guard card.duration.isFinite,(1...60).contains(card.duration),card.title.count <= 200,card.indicator.count <= 100,card.beat.count <= 2000,card.action.count <= 3000,card.openingFrame.count <= 3000,card.narration.count <= 2000,card.sound.count <= 1000,ShotDirection.cameras.contains(card.camera),ShotDirection.framings.contains(card.framing) else {throw StudioError.message("Check the storyboard card’s duration, text and camera choices.")}
         }
     }
     func direction(for card:StoryboardCard)->ShotDirection {
@@ -56,15 +58,15 @@ struct Storyboard:Identifiable,Codable,Equatable {
         Visual style: \(look)
         Continuity: \(continuity)
         Shot: \(card.title). \(card.beat)
-        Visible scene and action: \(card.action)
-        Composition: \(card.framing). Show a strong opening frame that can develop into a moving shot.
+        Opening pose: \(card.openingFrame.trimmingCharacters(in:.whitespacesAndNewlines).isEmpty ? card.action : card.openingFrame)
+        Composition: \(card.framing). Depict only one instant at the beginning of this shot. Each subject appears once, in one pose; do not combine successive stages of movement into the image.
         \(hasReference ? "The supplied image is the character and setting reference. Keep recognizable identity, markings, clothing and materials while composing the requested new shot." : "Establish a specific, memorable subject and setting that can remain consistent in the rest of the film.")
         """
     }
     func outline()->String {
         var lines = ["# "+title,"",premise,"","Visual style: "+look,"Continuity: "+continuity,""]
         for (i,c) in cards.enumerated() {
-            lines += ["## \(i+1). \(c.title) · \(String(format:"%.2f",c.duration)) s",c.indicator,"Beat: "+c.beat,"Action: "+c.action,"Camera: \(c.camera) · \(c.framing)","Narration: "+c.narration,"Sound: "+c.sound,""]
+            lines += ["## \(i+1). \(c.title) · \(String(format:"%.2f",c.duration)) s",c.indicator,"Beat: "+c.beat,"Opening frame: "+c.openingFrame,"Action: "+c.action,"Camera: \(c.camera) · \(c.framing)","Narration: "+c.narration,"Sound: "+c.sound,""]
         }
         return lines.joined(separator:"\n")
     }

@@ -144,6 +144,7 @@ struct StoryboardView:View {
     private func frameControls(_ card:StoryboardCard)->some View {
         VStack(alignment:.leading,spacing:8) {
             SmallLabel(text:"Reference frame")
+            field("Opening pose · still image",\.openingFrame,"Optional: one frozen pose. Keep movement in Visible action.")
             Picker("Card frame",selection:cardValue(\.frameAssetID,fallback:nil)) {Text("Choose a frame").tag(nil as UUID?);ForEach(store.project.assets.filter {$0.kind == .image}) {media in Text(media.name).tag(Optional(media.id))}}.font(.system(size:11)).disabled(blocked)
             Picker("Continuity reference",selection:boardValue(\.referenceAssetID)) {Text("No image reference yet").tag(nil as UUID?);ForEach(store.project.assets.filter {$0.kind == .image}) {media in Text(media.name).tag(Optional(media.id))}}.font(.system(size:11)).disabled(blocked)
             Picker("Image model",selection:$images.modelID) {if images.models.isEmpty {Text("Check image models").tag("")};ForEach(images.models) {model in Text(model.name).tag(model.id)}}.font(.system(size:11)).disabled(blocked)
@@ -185,7 +186,15 @@ struct StoryboardView:View {
         }
     }
     private func boardValue<T>(_ path:WritableKeyPath<Storyboard,T>)->Binding<T> {Binding(get:{board[keyPath:path]},set:{value in store.change({$0.storyboard?[keyPath:path] = value},rebuild:false)})}
-    private func cardValue<T>(_ path:WritableKeyPath<StoryboardCard,T>,fallback:T)->Binding<T> {Binding(get:{card?[keyPath:path] ?? fallback},set:{value in updateCard {$0[keyPath:path] = value}})}
+    private func cardValue<T>(_ path:WritableKeyPath<StoryboardCard,T>,fallback:T)->Binding<T> {
+        let cardID = selected
+        return Binding(get:{board.cards.first {$0.id == cardID}?[keyPath:path] ?? fallback},set:{value in
+            store.change({project in
+                guard let index = project.storyboard?.cards.firstIndex(where:{$0.id == cardID}) else {return}
+                project.storyboard?.cards[index][keyPath:path] = value
+            },rebuild:false)
+        })
+    }
     private func updateCard(_ action:(inout StoryboardCard)->Void) {guard let selected,let i = board.cards.firstIndex(where:{$0.id == selected}) else {return};store.change({if $0.storyboard != nil {action(&$0.storyboard!.cards[i])}},rebuild:false)}
     private func field(_ title:String,_ path:WritableKeyPath<StoryboardCard,String>,_ placeholder:String)->some View {VStack(alignment:.leading,spacing:4) {Text(title).font(.system(size:10,weight:.medium)).foregroundStyle(Ink.quiet);TextField(placeholder,text:cardValue(path,fallback:""),axis:.vertical).lineLimit(1...4).textFieldStyle(.roundedBorder).disabled(blocked)}}
     private func add() {var item = StoryboardCard();item.title = "Shot \(board.cards.count+1)";store.change({$0.storyboard?.cards.append(item)},rebuild:false);selected = item.id;planning = false}

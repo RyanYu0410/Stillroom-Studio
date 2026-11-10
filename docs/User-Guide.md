@@ -191,3 +191,7 @@ Design references: [Apple’s native Liquid Glass guidance](https://developer.ap
 | Local creation | ⌘G |
 
 Text fields retain normal typing behavior. The editable Swift source is in `Source/`.
+
+### Separate the opening image from the movement
+
+Use **Opening pose · still image** to describe one frozen instant: who is visible, where they stand, and the composition. Keep the sequence of movements in **Visible action**. Frame generation uses the opening pose when supplied; motion generation continues to use the action. This reduces the chance of showing the same moving subject several times in one reference image. Older boards remain compatible.

@@ -28,6 +28,16 @@ final class StoryboardTests:XCTestCase {
         XCTAssertEqual(project.subtitles[0].start,0);XCTAssertEqual(project.subtitles[1].end,4);XCTAssertEqual(project.subtitles[2].start,4);XCTAssertEqual(project.subtitles[2].end,10)
         try project.validated()
     }
+    func testOpeningPoseIsBackwardCompatibleAndDoesNotReplaceMotionDirection() throws {
+        let legacy = try JSONDecoder().decode(StoryboardCard.self,from:Data(#"{"title":"Cat","action":"Miso runs across the room."}"#.utf8))
+        XCTAssertEqual(legacy.openingFrame,"")
+        var card = legacy;card.openingFrame = "Miso crouches at the left edge."
+        let board = Storyboard()
+        XCTAssertTrue(board.framePrompt(for:card,hasReference:true).contains(card.openingFrame))
+        XCTAssertFalse(board.framePrompt(for:card,hasReference:true).contains(card.action))
+        XCTAssertEqual(board.direction(for:card).referenceDirection,card.action)
+        XCTAssertEqual(try JSONDecoder().decode(StoryboardCard.self,from:JSONEncoder().encode(card)),card)
+    }
     func testMissingFramesAndUnrelatedEditsAreRejectedAtomically() throws {
         var p = fixture();p.storyboard?.cards[1].frameAssetID = nil
         let before = p;XCTAssertThrowsError(try p.assembleStoryboard());XCTAssertEqual(p,before)

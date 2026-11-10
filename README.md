@@ -7,7 +7,7 @@ A native Mac workspace for storyboards, local AI motion, small Blender inserts a
 ## From a premise to a film
 
 1. Create a storyboard with an installed local chat model, or write cards yourself.
-2. Edit and reorder shot purpose, action, camera, duration, narration and sound cues.
+2. Edit and reorder shot purpose, opening pose, action, camera, duration, narration and sound cues.
 3. Generate reference frames locally and keep a shared character/location reference.
 4. Build a picture timeline with editable day/scene indicators and provisional subtitles.
 5. Generate short motion takes, review them at normal speed, then fit selected footage to the edit.
