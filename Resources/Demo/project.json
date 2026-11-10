@@ -1,0 +1,688 @@
+{
+  "version": 1,
+  "name": "The Missing Moment",
+  "brief": "A daughter asks AI to restore a face in an old photograph. Two plausible answers make her question what belongs in a family album. Keep the human action quiet, the photograph tangible and the ending open. This editable scene study uses original references and native takes. It is not a frame-identical copy of the finished film.",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "assets": [
+    {
+      "id": "3063ac31-2ad5-4de2-bbe8-c8c219c846f5",
+      "name": "Daughter At Table",
+      "path": "Media/01-Daughter-At-Table.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1672,
+      "height": 941,
+      "origin": "ImageGen",
+      "prompt": "Use case: photorealistic-natural. Cinematic 16:9 opening for The Missing Moment. A fictional daughter, about 34, olive skin and short dark wavy bob, olive cardigan and ivory blouse, sits at a walnut table studying a worn 1964 family photograph. The exact central child face on the supplied canonical damaged photo is missing; preserve that irregular ivory missing-emulsion patch in the print held between her hands. Rainy pewter daylight through window left, warm small lamp deep in lived-in apartment, plain dark laptop right, cups and paper ephemera. Restrained natural expression and accurate hands, tactile fabric, realistic skin, subtle film grain. Preserve composition and identity across later shots. No captions, logos, neon, holograms or plastic skin.",
+      "review": "Keep",
+      "notes": "Reconstructed final production specification; not an exact transcript of the initial generation/edit request."
+    },
+    {
+      "id": "3ace0498-76e2-4bc3-90fd-3d9e0d39ee54",
+      "name": "Family Possibility A",
+      "path": "Media/02-Family-Possibility-A.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1536,
+      "height": 1024,
+      "origin": "ImageGen",
+      "prompt": "Use case: photorealistic-natural. A flat, front-facing fictional 1964 black-and-white family snapshot with worn ivory paper border: parents in their late twenties seated with a five-year-old girl with a dark bob and a gentle half-smile, garden behind. Natural period clothing, fine grain and aged photographic paper, no modern objects or writing. This invented image is a hypothetical reconstruction in the film, not a historical document. Preserve identity and geometry as the canonical family plate.",
+      "review": "Keep",
+      "notes": "Reconstructed final production specification; not an exact transcript."
+    },
+    {
+      "id": "2e76cbe8-7dae-432f-b45d-ae1c55fa7270",
+      "name": "Family Damaged",
+      "path": "Media/03-Family-Damaged.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1536,
+      "height": 1024,
+      "origin": "ImageGen",
+      "prompt": "Use case: precise-object-edit. Edit only the central girl face of the canonical family photograph: irregular worn ivory missing emulsion covers eyes, nose and mouth. Retain hair, chin and dress. Keep both parents, garden, paper border, photographic grain, framing and every surviving detail unchanged. No new face or expression inside the missing patch.",
+      "review": "Keep",
+      "notes": "Reconstructed final production specification; not an exact transcript."
+    },
+    {
+      "id": "ea515d72-b93b-432b-af8a-273ac075ac06",
+      "name": "At The Laptop",
+      "path": "Media/04-At-The-Laptop.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1672,
+      "height": 941,
+      "origin": "ImageGen",
+      "prompt": "Use case: photorealistic-natural. Reference image: the supplied frame establishes the exact woman, wardrobe, apartment, walnut table, rain and lighting for The Missing Moment. Generate a new shot, not a duplicate. A restrained 16:9 widescreen over-the-shoulder three-quarter profile of this same woman working quietly at the same plain dark laptop. Camera is just behind and to the left of her, so we see her recognizable short dark wavy bob, side profile, olive cardigan, ivory shirt, and the laptop at an oblique angle. Her right hand rests naturally on the trackpad; the damaged family print lies beside the keyboard. The screen shows only a soft simple photographic workspace with muted light areas, no readable words, no logos, no fake technical diagrams. Her attention is gentle and intent, with the slightest hope. Rainy blue-grey daylight from the same window, warm lamp deep in the room, tactile realistic skin and fabrics, worn walnut, quiet natural shadows, 50mm cinema lens, subtle film grain and restrained halation. This is a lived-in home, not a studio or futuristic lab. Preserve the exact character identity and colour world from the reference. No captions, no neon or holograms, no theatrical smile, no plastic skin. Production-quality photographic cinematography.",
+      "review": "Keep",
+      "notes": "Fictional scene reference."
+    },
+    {
+      "id": "80892b8b-72c8-43ac-9edd-86e246477cbf",
+      "name": "Family Possibility B",
+      "path": "Media/05-Family-Possibility-B.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1536,
+      "height": 1024,
+      "origin": "ImageGen",
+      "prompt": "Edit target: this fictional archival family photograph. Change only the central little girl's facial expression inside the face area. Keep the same child identity, hair, head pose, direction of gaze, dress and all other image content. Her expression is now neutral and thoughtful, lips gently closed, without the half-smile. This should be a plausible alternate moment of the exact same snapshot, not a different child. Preserve the two adults, background, border, grain, scratches, contrast and framing as closely as possible. Do not add writing or labels. The purpose is to compare two possible expressions where the original evidence has been lost; neither version will be presented as a recovered historical fact.",
+      "review": "Keep",
+      "notes": "Fictional scene reference."
+    },
+    {
+      "id": "72d2404d-c655-4647-af52-e11036a908a3",
+      "name": "A Moment Of Recognition",
+      "path": "Media/06-A-Moment-Of-Recognition.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1672,
+      "height": 941,
+      "origin": "ImageGen",
+      "prompt": "Use case: photorealistic-natural. Character and location reference: the supplied frame of the woman at the table. Generate a new 16:9 widescreen intimate close-up of the exact same woman, from just above her chest to above her head, at the same rainy apartment window. Keep her oval face, short dark wavy bob, warm olive skin with small natural freckles, olive cardigan and ivory shirt. She is looking just below the camera at the laptop offscreen. There is a small moment of recognition in her eyes, a gentle almost-smile that is not fully resolved, no tears or broad smile. Her hands are outside the frame. Camera at eye level, 85mm photographic lens with soft depth of field, rainy window bokeh to the left and a warm blurred lamp in the depth at right. Pewter daylight and quiet walnut/ivory/olive palette. Natural pores, subtle under-eye texture, lived-in human presence, fine film grain, soft restrained contrast. High-quality observational film still, not a glamour portrait. Preserve the exact character identity. No writing, captions, logos, jewellery changes, extra people, holograms or artificial retouching.",
+      "review": "Keep",
+      "notes": "Fictional scene reference."
+    },
+    {
+      "id": "a90568d0-bf53-4c26-8bd0-b2d0b7cd440c",
+      "name": "The Explanation",
+      "path": "Media/07-The-Explanation.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1672,
+      "height": 941,
+      "origin": "ImageGen",
+      "prompt": "Use case: photorealistic-natural. Generate a new widescreen 16:9 film shot in the same apartment and with the exact same woman from the reference. Composition: camera is low beside the laptop, looking across its dark out-of-focus screen edge at the woman's face beyond. Her face is in sharp focus, slightly off-centre, attentive and quietly questioning rather than smiling. The short dark wavy bob, olive cardigan and ivory shirt remain exactly consistent. One hand is resting at the base of the laptop, naturally posed, mostly below the frame. Rainy window light brushes her cheek; warm practical lamp and books are softly blurred in the background. The laptop provides a dark foreground plane and visual depth, not a futuristic interface. An intimate 75mm-lens cinematic close-up with real skin texture, believable eyes and fine film grain, pewter/ivory/walnut colour world, restrained exposure and natural shadows. No readable screen text, no captions, no symbols, no logos, no other people. Keep the same identity, ordinary lived-in room, visual realism and subdued film lighting as the supplied reference.",
+      "review": "Keep",
+      "notes": "Fictional scene reference."
+    },
+    {
+      "id": "b53fd250-af54-4b1a-8bb9-d3fba5bd9577",
+      "name": "Window Reflection",
+      "path": "Media/08-Window-Reflection.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1672,
+      "height": 941,
+      "origin": "ImageGen",
+      "prompt": "Use case: photorealistic-natural. New 16:9 widescreen cinematic shot for The Missing Moment, using the exact woman and apartment in the supplied reference. View from just outside the rain-streaked dining-room window, looking through the glass toward the same woman seated inside. The woman is in a quiet three-quarter profile, eyes lowered toward a laptop that is mostly outside the frame; her olive cardigan, ivory collar, short wavy dark bob and recognizable face remain consistent. Water droplets and one thin rivulet catch cool daylight on the foreground glass. Very subtle reflections of the grey sky coexist with a warm lamp in the room behind her, but do not create duplicate faces or ghost people. The composition explores an interior seen through a surface: calm, intimate, physically believable. Focus is on her face through the glass, with some nearby drops slightly out of focus; restrained 75mm lens, natural skin texture, fine film grain, pewter daylight and dim warm amber, no dramatic coloured lights. Leave air and layered depth in the frame. No writing, logos, captions, neon, holograms, robots or added characters. Avoid theatrical sadness; she is thinking.",
+      "review": "Keep",
+      "notes": "Fictional scene reference."
+    },
+    {
+      "id": "ea272c4d-4aae-41d8-9fb9-39112922cd2a",
+      "name": "Mother Arrives",
+      "path": "Media/09-Mother-Arrives.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1672,
+      "height": 941,
+      "origin": "ImageGen",
+      "prompt": "Use case: photorealistic-natural. Reference 1 establishes the apartment, daughter and film lighting. Reference 2 is a fictional 1964 family photograph; its central child is now the older mother in this new shot. Generate one new 16:9 widescreen cinematic frame: a woman about 67 stands naturally in the interior doorway of this same apartment, looking gently toward her seated daughter off-camera. She has an oval face, warm olive skin, brown eyes, natural age lines, short softly waved silver-grey hair with dark remnants, and some family resemblance to the daughter and the child in the archival picture. She wears a muted navy wool cardigan over a simple warm stone-coloured blouse, ordinary understated clothing. A soft dark coat rests over one forearm, mostly outside the image. No dramatic pose or sadness; she has just arrived and is quietly attentive. A small blurred edge of the daughter's olive shoulder may be in the foreground, but the older woman is the focus. Keep the rainy pewter daylight and dim warm lamp, walnut and books, lived-in domestic depth, 65mm lens, realistic skin and fine film grain. Natural, restrained arthouse cinematography. No text, logos, captions, futuristic objects or extra people. Establish this older woman's exact identity clearly for later shots.",
+      "review": "Keep",
+      "notes": "Fictional scene reference."
+    },
+    {
+      "id": "8f023305-690c-4e27-80ba-b6370edae118",
+      "name": "Two People",
+      "path": "Media/10-Two-People.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1672,
+      "height": 941,
+      "origin": "ImageGen",
+      "prompt": "Use case: photorealistic-natural. Reference 1 is the daughter and dining room; reference 2 is the older mother; reference 3 is the exact damaged family print. Generate a new 16:9 widescreen medium two-shot in the same apartment. The daughter sits on the left of the walnut dining table and her mother sits on the right. Both keep their exact faces, hair, ages and clothing from their references: olive cardigan and ivory shirt for the daughter, navy cardigan and stone blouse for the mother. They turn gently toward one another, holding a quiet unforced conversation; the daughter is asking a sincere question and the mother is thinking before answering. Natural relaxed mouths, no theatrical smiles or tears. The damaged black-and-white print lies between them, with its central ivory missing-face patch intact. One cream archival envelope and two ordinary cups sit unobtrusively on the table. The laptop is off to the far right and its screen is turned away; it is no longer the centre of attention. Believable relaxed hands resting on the table, no complicated hand gestures. Soft rain-filtered window light from the left, dim amber practical lamp in the room's depth, warm walnut and cool daylight balance, detailed lived-in fabrics and skin, 50mm cinema lens, subtle fine grain. Intimate observational photographic film still, composed with breathing space and a strong human connection. No subtitles, captions, readable screen writing, logos, extra characters or futuristic effects.",
+      "review": "Keep",
+      "notes": "Fictional scene reference."
+    },
+    {
+      "id": "8c19e040-5de0-47cd-bb18-d5b6028af193",
+      "name": "The Archive",
+      "path": "Media/11-The-Archive.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1672,
+      "height": 941,
+      "origin": "ImageGen",
+      "prompt": "Use case: photorealistic-natural. Generate a new 16:9 widescreen close-up looking down at the same worn walnut table in reference 1, in the same rainy-day film lighting. References 2 and 3 are exact picture-content references, not background style. Two modest physical family prints lie side by side on simple cream archival mounts: on the left, the damaged print from reference 2 with the little girl's central face missing as an irregular ivory patch; on the right, the plausible clean family reconstruction from reference 3, the same three people and a little half-smile on the child. Under the right-hand print, on its cream mount, a single small, neat handwritten graphite word reads exactly \"imagined\" in lower-case. This is the only legible word in the image; it labels the reconstruction without writing on the photograph. The daughter's olive-sleeved hand gently touches one corner of the left print. An older navy-sleeved hand rests nearby on the table, relaxed, not overlapping or interlocking fingers. Realistic hand anatomy, pores, paper fibres, creases and soft shadows. The images remain the centre of the composition; hands form a subtle human frame. Natural 75mm close-up, slightly oblique overhead viewpoint, restrained depth of field, walnut/ivory/pewter palette, fine film grain. No laptop in this shot. No extra words, dates, captions, logos or futuristic effects.",
+      "review": "Keep",
+      "notes": "Fictional scene reference."
+    },
+    {
+      "id": "f22323f2-cc42-4ee4-b012-956bee1cc1ab",
+      "name": "The Question",
+      "path": "Media/12-The-Question.png",
+      "kind": "image",
+      "duration": 0,
+      "width": 1672,
+      "height": 941,
+      "origin": "ImageGen",
+      "prompt": "Use case: photorealistic-natural. Generate the final wide 16:9 cinematic shot of The Missing Moment. Reference 1 establishes the exact two women, their clothes, seats and apartment. Reference 2 establishes the two mounted family prints now on the table. Pull the camera back to a patient 35mm wide view of the whole walnut dining table and more of the lived-in room. The daughter remains on the left in her olive cardigan and ivory shirt, the mother on the right in her navy cardigan and stone blouse. Their identities, hair and ages stay exactly the same. They are turned toward one another with quiet attention, hands at rest, the beginning of a human conversation rather than a posed photograph. Keep the two mounted prints on the table between them and the cream envelopes and ordinary cups. The plain laptop is closed and off to the far right. The large rain-streaked window on the left gives soft grey evening light; the small warm lamp glows in the adjoining room, with books and modest plants in the background. Give the composition depth, architectural calm and breathing room, avoiding clutter. The mood is more open and present than the earlier solitary shot; no sentimental embrace, tears or broad smiles. Natural imperfect skin, warm wood, fabric texture, fine film grain, restrained halation and truthful lighting. A beautiful ordinary room, not an advertisement. No added writing, captions, logos, futuristic effects or extra people.",
+      "review": "Keep",
+      "notes": "Fictional scene reference."
+    },
+    {
+      "id": "eb8b37cd-4685-4e89-9efa-92c20f35f8dc",
+      "name": "Damaged print",
+      "path": "Media/02.mp4",
+      "kind": "video",
+      "duration": 12.0,
+      "width": 1920,
+      "height": 1080,
+      "origin": "Blender",
+      "prompt": "",
+      "review": "Keep",
+      "notes": "Eevee render. Curled paper geometry, UV photo textures, 48/42 mm camera and soft window light."
+    },
+    {
+      "id": "fcce8b52-fa1c-416a-b06e-cdcc6d4fb3ae",
+      "name": "At The Laptop \u00b7 native",
+      "path": "Media/03-native.mp4",
+      "kind": "video",
+      "duration": 6.75,
+      "width": 1280,
+      "height": 704,
+      "origin": "ComfyUI / MLX",
+      "prompt": "One continuous photographic cinema take in the exact apartment in the reference. Preserve the exact identities, ages, hair, clothing, body proportions, furniture, window positions and lighting. Rainy blue-grey daylight, warm lamp, olive and walnut colour palette, real skin texture. Small natural movements only, no scene change, no new people, no jump cuts, no morphing faces, no extra fingers. Side view of the same woman working at the plain dark laptop. She moves one finger a small distance on the trackpad and watches the screen attentively. Subtle breathing and natural eye movement, restrained posture. The damaged paper photograph stays on the table. Keep the laptop screen as a soft photographic workspace with no new writing. Patient steady camera with an almost imperceptible lateral drift. No dramatic head turn, no new screen windows.",
+      "review": "Keep",
+      "notes": "Nine native samples inspected. Identity, hand/trackpad movement and room remain coherent; the laptop retains the damaged family print, with slight screen-luminance variation. A small head/gaze movement and camera drift provide a continuous performance. No inset or hard cut; native maximum frame difference 4.46/255 and no duplicate pairs."
+    },
+    {
+      "id": "506b46be-5126-4349-b371-21ea059735db",
+      "name": "A Moment Of Recognition \u00b7 native",
+      "path": "Media/05-native.mp4",
+      "kind": "video",
+      "duration": 3.375,
+      "width": 1280,
+      "height": 704,
+      "origin": "ComfyUI / MLX",
+      "prompt": "One uninterrupted close portrait of a woman with a short dark wavy bob, wearing an olive knitted cardigan over an ivory blouse, seated at a walnut table beside a rain-streaked window. Her eyes stay lowered toward the laptop in the foreground. She breathes quietly and gives one small natural blink, a restrained almost-smile. The camera remains steady on this exact face and clothing for the whole take. Soft rainy daylight and a warm lamp in the same apartment. A single person, continuous gentle motion, realistic skin, no scene transition.",
+      "review": "Keep",
+      "notes": "The first take was rejected for a white flash, wardrobe/identity drift and a background figure. Its replacement is anchored to the same portrait at start/middle/end. Nine native samples inspected: consistent face, olive cardigan, ivory blouse and room, with very restrained micro-motion and no flash, cut or extra person. Accepted as a held reaction with an added gentle 3.5 percent camera push. Maximum frame difference 0.21/255 and zero exact duplicate pairs. No loop."
+    },
+    {
+      "id": "bf6a4dad-b404-437e-8c1e-68fb9241fbc4",
+      "name": "Two possibilities",
+      "path": "Media/06.mp4",
+      "kind": "video",
+      "duration": 16.0,
+      "width": 1920,
+      "height": 1080,
+      "origin": "Blender",
+      "prompt": "",
+      "review": "Keep",
+      "notes": "Eevee render. Curled paper geometry, UV photo textures, 48/42 mm camera and soft window light."
+    },
+    {
+      "id": "02c58537-0c65-4cbb-acaa-6ba22795fb99",
+      "name": "The Explanation \u00b7 native",
+      "path": "Media/07-native.mp4",
+      "kind": "video",
+      "duration": 6.75,
+      "width": 1280,
+      "height": 704,
+      "origin": "ComfyUI / MLX",
+      "prompt": "One continuous photographic cinema take in the exact apartment in the reference. Preserve the exact identities, ages, hair, clothing, body proportions, furniture, window positions and lighting. Rainy blue-grey daylight, warm lamp, olive and walnut colour palette, real skin texture. Small natural movements only, no scene change, no new people, no jump cuts, no morphing faces, no extra fingers. An intimate close portrait of the same woman studying the laptop in the foreground left. She reads with a questioning, serious expression, eyes moving slightly downward. A subtle exhale, one natural blink. Almost locked camera with tiny cinematic parallax, no large zoom. Keep her hands low and still. No speaking, no change of identity, no smile, no new objects.",
+      "review": "Keep",
+      "notes": "Nine native samples inspected. Same identity, olive/ivory wardrobe, room and light throughout. Natural changing expression, blink, slight mouth/exhale movement and continuous camera drift. A restrained half-smile at the end is accepted as an ambiguous reaction to the explanation. No flash, inset, extra person or cut. Maximum native frame difference 1.93/255; zero duplicate pairs."
+    },
+    {
+      "id": "89969c07-1d9c-4ca9-9700-00abc159ee6c",
+      "name": "Window Reflection \u00b7 native",
+      "path": "Media/08-native.mp4",
+      "kind": "video",
+      "duration": 3.375,
+      "width": 1280,
+      "height": 704,
+      "origin": "ComfyUI / MLX",
+      "prompt": "One continuous view through a wet window of a single woman inside the room. She has a short dark wavy bob, an olive knitted cardigan and an ivory blouse. She sits at a walnut table looking down toward her laptop, breathing quietly. The camera holds this same composition. Fine beads of water on the foreground glass, soft rainy daylight and a warm lamp behind her. Exactly one human figure stays inside the room for the whole shot.",
+      "review": "Keep",
+      "notes": "The unbounded version was rejected for a cut and an apparent duplicate woman. Nine samples of the constrained replacement inspected: one consistent woman, olive cardigan/ivory blouse, room, glass and photographic framing. Subtle gaze/pose and wet-glass movement, no flash or duplicated person. Maximum frame difference 2.93/255, no exact duplicate pairs."
+    },
+    {
+      "id": "9be21728-8588-43b6-87e1-01acdbc1df73",
+      "name": "Mother Arrives \u00b7 native",
+      "path": "Media/09-native.mp4",
+      "kind": "video",
+      "duration": 3.375,
+      "width": 1280,
+      "height": 704,
+      "origin": "ComfyUI / MLX",
+      "prompt": "A continuous medium shot of one older woman paused at the doorway of a lived-in home. Her short silver-grey hair is softly wavy. She wears a navy knitted cardigan over a stone collared blouse and supports a dark coat on her forearm. She breathes, shifts her weight slightly and looks warmly toward her daughter off camera. A restrained almost-smile, gentle eye movement. The camera stays on this exact woman in this same doorway. Soft rainy daylight and warm lamp light.",
+      "review": "Keep",
+      "notes": "Unbounded arrival rejected for a reverse-view cut, changed mother and added figure. Nine samples of the constrained replacement inspected: same softly waved grey hair, navy cardigan, stone collared blouse, coat and doorway throughout, with restrained facial/weight movement. Accepted as a quiet doorway arrival with a subtle camera push. Maximum frame difference 2.46/255; no exact duplicate pairs or hard cut."
+    },
+    {
+      "id": "e7a815ff-7eec-4099-9c73-f7648774e4da",
+      "name": "Two People \u00b7 native",
+      "path": "Media/10-native.mp4",
+      "kind": "video",
+      "duration": 5.375,
+      "width": 1280,
+      "height": 704,
+      "origin": "ComfyUI / MLX",
+      "prompt": "One continuous quiet two-shot of a daughter on the left and her older mother on the right, seated at a walnut table in their home. The daughter has a short dark wavy bob and an olive cardigan over an ivory blouse. The mother has softly waved silver-grey hair and a navy cardigan over a stone blouse. They look at each other attentively. The mother pauses and makes a small uncertain head movement. Quiet natural breathing and subtle eye movement. Their hands rest on the table, the damaged photograph stays flat, and the laptop stays closed. The same two people and room remain throughout the take.",
+      "review": "Keep",
+      "notes": "Nine native samples and six precise boundary/selection samples inspected. Exclude the opening, which has exposure and overlapping-photo artifacts. Use frames 60 through 128: the same two people, olive/navy wardrobe, hands, closed laptop and one damaged print stay consistent. Very restrained conversational micro-motion, accepted as a quiet two-shot with controlled camera movement. The image is not a validated lip-sync performance."
+    },
+    {
+      "id": "864ac085-cd8e-41b6-8441-021982418c2e",
+      "name": "The Question \u00b7 native",
+      "path": "Media/12-native.mp4",
+      "kind": "video",
+      "duration": 10.75,
+      "width": 1280,
+      "height": 704,
+      "origin": "ComfyUI / MLX",
+      "prompt": "One continuous photographic cinema take in the exact apartment in the reference. Preserve the exact identities, ages, hair, clothing, body proportions, furniture, window positions and lighting. Rainy blue-grey daylight, warm lamp, olive and walnut colour palette, real skin texture. Small natural movements only, no scene change, no new people, no jump cuts, no morphing faces, no extra fingers. A quiet final shot of a daughter on the left and her older mother on the right, seated opposite one another at a walnut table. Start as the closer two-shot and move smoothly backward to the wider framing in the final reference. A slow, uninterrupted dolly backward, gently revealing more of the room and table. The two women remain seated and share a natural attentive look, subtle breathing and tiny eye movements. Hands rest quietly. Keep both photographs flat on the table and the laptop closed. The move eases gently to a stop. No forward zoom, no people leaving, no opening laptop, no gestures, no objects appearing or disappearing. Let the room become larger around the two people.",
+      "review": "Keep",
+      "notes": "Nine native samples plus precise in/out boundary frames inspected. Use only native frames 33 through 116: the opening contains an unwanted inset and the final guide causes a colour/framing jump. The selected middle portion is one stable continuous pullback, with consistent two-person identities, stationary hands, closed laptop and a blank face on the left original. Warm grade reduces the blue shift. Additional smooth 1.12-to-1.00 camera reframing keeps widening visible through the final line. No loop."
+    },
+    {
+      "id": "224b6972-1532-4b61-9282-3f310ae269e6",
+      "name": "Voice",
+      "path": "Media/Narration-final.m4a",
+      "kind": "audio",
+      "duration": 151.292,
+      "width": 0,
+      "height": 0,
+      "origin": "Original production",
+      "prompt": "",
+      "review": "Keep",
+      "notes": "Separate editable stem from The Missing Moment. See demo credits for recordings and synthetic voice disclosure."
+    },
+    {
+      "id": "000c96a8-58fd-44d7-a3e3-04932e36fc61",
+      "name": "Room tone",
+      "path": "Media/Room-atmosphere-final.m4a",
+      "kind": "audio",
+      "duration": 151.292,
+      "width": 0,
+      "height": 0,
+      "origin": "Original production",
+      "prompt": "",
+      "review": "Keep",
+      "notes": "Separate editable stem from The Missing Moment. See demo credits for recordings and synthetic voice disclosure."
+    },
+    {
+      "id": "16d55dc2-155e-4c29-af8c-a717576abe1c",
+      "name": "Foley",
+      "path": "Media/Foley-final.m4a",
+      "kind": "audio",
+      "duration": 151.292,
+      "width": 0,
+      "height": 0,
+      "origin": "Original production",
+      "prompt": "",
+      "review": "Keep",
+      "notes": "Separate editable stem from The Missing Moment. See demo credits for recordings and synthetic voice disclosure."
+    },
+    {
+      "id": "5d47ccf5-17fe-4b66-8bdb-9f4d514830df",
+      "name": "Score",
+      "path": "Media/Original-score-final.m4a",
+      "kind": "audio",
+      "duration": 151.292,
+      "width": 0,
+      "height": 0,
+      "origin": "Original production",
+      "prompt": "",
+      "review": "Keep",
+      "notes": "Separate editable stem from The Missing Moment. See demo credits for recordings and synthetic voice disclosure."
+    }
+  ],
+  "shots": [
+    {
+      "id": "36babf3b-0d10-4583-935f-6ad01996456f",
+      "assetID": "3063ac31-2ad5-4de2-bbe8-c8c219c846f5",
+      "name": "A page for Mum",
+      "sourceIn": 0,
+      "sourceDuration": 12.166666666666666,
+      "speed": 1.0,
+      "zoomStart": 1,
+      "zoomEnd": 1.035,
+      "volume": 0,
+      "note": "Mum was coming round. I wanted to finish something for her. A page for the family album."
+    },
+    {
+      "id": "a80dd218-4351-4ef6-80f6-8bc2f0b9feab",
+      "assetID": "eb8b37cd-4685-4e89-9efa-92c20f35f8dc",
+      "name": "The missing face",
+      "sourceIn": 0,
+      "sourceDuration": 12.0,
+      "speed": 1.147410358565737,
+      "zoomStart": 1,
+      "zoomEnd": 1,
+      "volume": 0,
+      "note": "That's her, when she was five. The garden's still there. Her face is gone."
+    },
+    {
+      "id": "1c89b8a6-615e-49af-977e-62ddde811918",
+      "assetID": "fcce8b52-fa1c-416a-b06e-cdcc6d4fb3ae",
+      "name": "A simple request",
+      "sourceIn": 0.0,
+      "sourceDuration": 6.75,
+      "speed": 0.7788461538461539,
+      "zoomStart": 1,
+      "zoomEnd": 1,
+      "volume": 0,
+      "note": "Can you fill in the bit that's missing?"
+    },
+    {
+      "id": "0b756f71-7e0e-4260-87fd-4b353bfff044",
+      "assetID": "3ace0498-76e2-4bc3-90fd-3d9e0d39ee54",
+      "name": "A possible smile",
+      "sourceIn": 0,
+      "sourceDuration": 10.458333333333334,
+      "speed": 1.0,
+      "zoomStart": 1,
+      "zoomEnd": 1.035,
+      "volume": 0,
+      "note": "And there she was. A little smile. I thought, yes. That looks like Mum."
+    },
+    {
+      "id": "e1f9bc82-8b66-4f45-91af-fe7fc5fccb59",
+      "assetID": "506b46be-5126-4349-b371-21ea059735db",
+      "name": "Another version",
+      "sourceIn": 0.0,
+      "sourceDuration": 3.375,
+      "speed": 0.3894230769230769,
+      "zoomStart": 1,
+      "zoomEnd": 1.035,
+      "volume": 0,
+      "note": "Could you try another one?"
+    },
+    {
+      "id": "1765d4fa-d1b7-4df0-b528-cd4af9efe83e",
+      "assetID": "bf6a4dad-b404-437e-8c1e-68fb9241fbc4",
+      "name": "Two possibilities",
+      "sourceIn": 0,
+      "sourceDuration": 16.0,
+      "speed": 1.1497005988023952,
+      "zoomStart": 1,
+      "zoomEnd": 1,
+      "volume": 0,
+      "note": "This time, she wasn't smiling. I liked the first one better. But that didn't make it right."
+    },
+    {
+      "id": "4aa10b19-5515-4d22-87e7-3a63a774bdcb",
+      "assetID": "02c58537-0c65-4cbb-acaa-6ba22795fb99",
+      "name": "Explaining a guess",
+      "sourceIn": 0.0,
+      "sourceDuration": 6.75,
+      "speed": 0.48502994011976047,
+      "zoomStart": 1,
+      "zoomEnd": 1,
+      "volume": 0,
+      "note": "I asked why it had chosen a smile. The answer sounded reasonable. But it was still explaining a guess."
+    },
+    {
+      "id": "12578157-a936-469a-a627-c00468a4c1e2",
+      "assetID": "89969c07-1d9c-4ca9-9700-00abc159ee6c",
+      "name": "What becomes a memory",
+      "sourceIn": 0.0,
+      "sourceDuration": 3.375,
+      "speed": 0.2773972602739726,
+      "zoomStart": 1,
+      "zoomEnd": 1,
+      "volume": 0,
+      "note": "If I put this in the album, someone might think it was real. In a few years, I might think so too."
+    },
+    {
+      "id": "9b09c1fe-ea4e-4cbc-87ad-3d8912dcd157",
+      "assetID": "9be21728-8588-43b6-87e1-01acdbc1df73",
+      "name": "Mum arrives",
+      "sourceIn": 0.0,
+      "sourceDuration": 3.375,
+      "speed": 0.38755980861244016,
+      "zoomStart": 1,
+      "zoomEnd": 1.035,
+      "volume": 0,
+      "note": "Then Mum arrived."
+    },
+    {
+      "id": "2a0df36b-f326-4b7b-b5d0-d40e76c0b145",
+      "assetID": "e7a815ff-7eec-4099-9c73-f7648774e4da",
+      "name": "I do not remember",
+      "sourceIn": 2.5,
+      "sourceDuration": 2.875,
+      "speed": 0.16507177033492823,
+      "zoomStart": 1,
+      "zoomEnd": 1,
+      "volume": 0,
+      "note": "Do you remember this?"
+    },
+    {
+      "id": "ffc4c115-dced-4c30-af53-b014b92d156e",
+      "assetID": "8c19e040-5de0-47cd-bb18-d5b6028af193",
+      "name": "The honest archive",
+      "sourceIn": 0,
+      "sourceDuration": 12.166666666666666,
+      "speed": 1.0,
+      "zoomStart": 1,
+      "zoomEnd": 1.035,
+      "volume": 0,
+      "note": "I kept the old photograph. Beside the new one, I wrote: imagined. I didn't want to lose what was real."
+    },
+    {
+      "id": "e8191290-fe09-4747-be9a-8438e92271e9",
+      "assetID": "864ac085-cd8e-41b6-8441-021982418c2e",
+      "name": "The garden",
+      "sourceIn": 2.75,
+      "sourceDuration": 7.0,
+      "speed": 0.30996309963099633,
+      "zoomStart": 1.12,
+      "zoomEnd": 1,
+      "volume": 0,
+      "note": "Mum was still sitting across from me."
+    }
+  ],
+  "sounds": [
+    {
+      "id": "0409bbee-7e84-426f-a310-6ac997312c05",
+      "assetID": "224b6972-1532-4b61-9282-3f310ae269e6",
+      "name": "Voice",
+      "start": 0,
+      "sourceIn": 0,
+      "duration": 151.29166666666666,
+      "volume": 0.62,
+      "muted": false
+    },
+    {
+      "id": "a67e818c-aca7-422d-8a43-8acaccdfba99",
+      "assetID": "000c96a8-58fd-44d7-a3e3-04932e36fc61",
+      "name": "Room tone",
+      "start": 0,
+      "sourceIn": 0,
+      "duration": 151.29166666666666,
+      "volume": 0.62,
+      "muted": false
+    },
+    {
+      "id": "34b88063-ce33-4df3-8efc-58e832755273",
+      "assetID": "16d55dc2-155e-4c29-af8c-a717576abe1c",
+      "name": "Foley",
+      "start": 0,
+      "sourceIn": 0,
+      "duration": 151.29166666666666,
+      "volume": 0.62,
+      "muted": false
+    },
+    {
+      "id": "9e07ed9b-707a-455d-963b-bd7052e3b3f6",
+      "assetID": "5d47ccf5-17fe-4b66-8bdb-9f4d514830df",
+      "name": "Score",
+      "start": 0,
+      "sourceIn": 0,
+      "duration": 151.29166666666666,
+      "volume": 0.62,
+      "muted": false
+    }
+  ],
+  "subtitles": [
+    {
+      "id": "a66edecc-1abb-4f61-902f-e8ce20f2f6aa",
+      "start": 1.9,
+      "end": 5.34,
+      "text": "Mum was coming round. I wanted to finish something for her."
+    },
+    {
+      "id": "4ff5f099-eef3-4d7b-9252-7d387796b425",
+      "start": 5.4399999999999995,
+      "end": 7.765,
+      "text": "A page for the family album."
+    },
+    {
+      "id": "247e1967-eb7d-422c-aaa5-a6fdf2b77bde",
+      "start": 13.266666666666666,
+      "end": 16.101666666666663,
+      "text": "That's her, when she was five. The garden's still there."
+    },
+    {
+      "id": "b5e94915-ac28-441b-bcb0-74a56c18ff7d",
+      "start": 16.316666666666666,
+      "end": 17.966666666666665,
+      "text": "Her face is gone."
+    },
+    {
+      "id": "5c03c8a3-eeb4-4992-9252-1eb2e6b9bba8",
+      "start": 25.225,
+      "end": 27.55,
+      "text": "Can you fill in the bit that's missing?"
+    },
+    {
+      "id": "6115bbd3-9989-4e7d-a68d-40b3fe980833",
+      "start": 32.29166666666667,
+      "end": 34.45666666666668,
+      "text": "And there she was. A little smile."
+    },
+    {
+      "id": "894538c7-96bc-4092-b4f1-51734749d9b1",
+      "start": 34.69166666666667,
+      "end": 37.381666666666675,
+      "text": "I thought, yes. That looks like Mum."
+    },
+    {
+      "id": "37e4cb97-8c71-4e64-ad01-16f5adbf03eb",
+      "start": 43.75,
+      "end": 45.725,
+      "text": "Could you try another one?"
+    },
+    {
+      "id": "708c53fe-7955-4dd5-b67d-190e1572dea1",
+      "start": 51.96666666666666,
+      "end": 53.96666666666666,
+      "text": "This time, she wasn't smiling."
+    },
+    {
+      "id": "1a9a829c-d179-41a7-b151-d9f0af0f556e",
+      "start": 54.06666666666666,
+      "end": 55.791666666666664,
+      "text": "I liked the first one better."
+    },
+    {
+      "id": "47324d7e-a305-4362-a1c9-c0d92a6e7a82",
+      "start": 55.84166666666666,
+      "end": 57.891666666666666,
+      "text": "But that didn't make it right."
+    },
+    {
+      "id": "2608b756-f3be-423e-af5d-0ee51a3802ca",
+      "start": 65.98333333333333,
+      "end": 68.35833333333333,
+      "text": "I asked why it had chosen a smile."
+    },
+    {
+      "id": "4c803fb7-3857-4e40-840c-c8d5ed40016e",
+      "start": 68.40833333333333,
+      "end": 70.35833333333333,
+      "text": "The answer sounded reasonable."
+    },
+    {
+      "id": "cd8050c5-97e8-4661-812b-3db591efda7f",
+      "start": 70.40833333333333,
+      "end": 72.78333333333333,
+      "text": "But it was still explaining a guess."
+    },
+    {
+      "id": "6537a6b8-fd0c-4067-8f98-79542529953b",
+      "start": 80.15,
+      "end": 83.825,
+      "text": "If I put this in the album, someone might think it was real."
+    },
+    {
+      "id": "636ea222-76ea-4148-84ec-f24a5f1a894a",
+      "start": 83.92500000000001,
+      "end": 86.55000000000001,
+      "text": "In a few years, I might think so too."
+    },
+    {
+      "id": "2ec20876-6b9f-4396-b76b-68f744afb20e",
+      "start": 92.66666666666667,
+      "end": 94.41666666666667,
+      "text": "Then Mum arrived."
+    },
+    {
+      "id": "e7645975-b982-4712-bf5a-794aeeed2231",
+      "start": 100.925,
+      "end": 102.575,
+      "text": "Do you remember this?"
+    },
+    {
+      "id": "e6b10cbe-3a12-4dd6-922b-dea90ce167f6",
+      "start": 104.525,
+      "end": 106.92500000000001,
+      "text": "Oh, I don't remember that day."
+    },
+    {
+      "id": "b202b8cc-0f93-4f32-a1ba-ee4a7fff76e5",
+      "start": 110.025,
+      "end": 111.47500000000001,
+      "text": "That's all right."
+    },
+    {
+      "id": "eaeed385-5ffd-4bda-9428-9946b327a035",
+      "start": 117.34166666666667,
+      "end": 119.29166666666667,
+      "text": "I kept the old photograph."
+    },
+    {
+      "id": "7d01603d-2041-48a1-b059-40114516d10a",
+      "start": 119.34166666666667,
+      "end": 121.89166666666667,
+      "text": "Beside the new one, I wrote: imagined."
+    },
+    {
+      "id": "18bdc589-2ff7-4675-b649-f4365fb09f19",
+      "start": 121.96666666666667,
+      "end": 124.19166666666668,
+      "text": "I didn't want to lose what was real."
+    },
+    {
+      "id": "dd50ee6c-c3c6-42c2-b273-39be13831a6e",
+      "start": 129.70833333333334,
+      "end": 132.25833333333333,
+      "text": "Mum was still sitting across from me."
+    },
+    {
+      "id": "d8d0bf87-674b-480e-a581-fe92acf30554",
+      "start": 135.50833333333335,
+      "end": 137.35833333333335,
+      "text": "What was the garden like?"
+    },
+    {
+      "id": "aa907ec4-c98a-436b-9e25-d6089cee8fda",
+      "start": 139.40833333333333,
+      "end": 141.5583333333333,
+      "text": "There were roses by the back door."
+    },
+    {
+      "id": "34239403-aadd-41da-9ff8-54880a7a451f",
+      "start": 141.71833333333333,
+      "end": 144.1183333333333,
+      "text": "Your grandad was very proud of them."
+    }
+  ],
+  "captionsEnabled": true
+}

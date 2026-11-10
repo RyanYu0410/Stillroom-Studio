@@ -1,0 +1,38 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "Missing-Moment-Cinema-08.png"
+    }
+  },
+  "2": {
+    "class_type": "LTX2MLXModelLoader",
+    "inputs": {
+      "model_dir": "dgrauet/ltx-2.3-mlx-q8",
+      "pipeline_type": "distilled",
+      "low_ram": false,
+      "custom_model_dir": "/absolute/path/to/your/ltx-model"
+    }
+  },
+  "3": {
+    "class_type": "MissingMomentPinnedTake",
+    "inputs": {
+      "pipeline": [
+        "2",
+        0
+      ],
+      "image": [
+        "1",
+        0
+      ],
+      "prompt": "One continuous view through a wet window of a single woman inside the room. She has a short dark wavy bob, an olive knitted cardigan and an ivory blouse. She sits at a walnut table looking down toward her laptop, breathing quietly. The camera holds this same composition. Fine beads of water on the foreground glass, soft rainy daylight and a warm lamp behind her. Exactly one human figure stays inside the room for the whole shot.",
+      "width": 1280,
+      "height": 704,
+      "num_frames": 81,
+      "seed": 913708,
+      "middle_strength": 0.55,
+      "end_strength": 0.85,
+      "filename_prefix": "Missing-Moment-Cinema/08-pinned"
+    }
+  }
+}
